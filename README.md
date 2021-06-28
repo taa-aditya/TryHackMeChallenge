@@ -60,10 +60,10 @@ Once we are in, use the same command `ls -al` to view the files. We find the **u
 Assuming the root.txt will be placed in the root folder, I try to access it.  
 ![permdeny](https://user-images.githubusercontent.com/74425235/123645938-63e10880-d844-11eb-9dfa-a3dd388912a0.png) but permission is denied.
 
-Now, I use the “sudo -l” command to check for sudo commands which can be used by our user.  
+Now, I use the `sudo -l` command to check for sudo commands which can be used by our user.  
 ![sudol](https://user-images.githubusercontent.com/74425235/123645985-6d6a7080-d844-11eb-8f24-2cef3330e4d3.png)
 
-Notice that the root user can use the “/bin/tar” command. Interesting, let’s check if we can use this for privilege escalation on GTFObins.  
+Notice that the root user can use the `/bin/tar` command. Interesting, let’s check if we can use this for privilege escalation on GTFObins.  
 YES! There is a way we can use this for our benefit.  
 ![gtfobins](https://user-images.githubusercontent.com/74425235/123646017-78bd9c00-d844-11eb-9f67-717e60c36350.png)
 
